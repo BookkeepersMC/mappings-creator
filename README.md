@@ -1,4 +1,4 @@
 # Mappings Plugin
 
 ## Usage
-See [USAGE.md](USAGE) to set up!
+See [USAGE](USAGE.md) to set up!
