@@ -1,0 +1,86 @@
+plugins {
+	id 'java'
+	id 'com.gradle.plugin-publish' version '1.3.0'
+}
+
+group = "com.bookkeepersmc"
+base {
+	archivesName = "mappings-creator"
+}
+version = "1.0.0"
+
+repositories {
+	maven {
+		name "Mojang"
+		url 'https://libraries.minecraft.net/'
+	}
+	mavenCentral()
+	maven {
+		name "Quilt Repository"
+		url "https://maven.quiltmc.org/repository/release"
+	}
+	maven {
+		name "Fabric Repository"
+		url 'https://maven.fabricmc.net'
+	}
+	maven {
+		name "Quilt Snapshot Repository"
+		url "https://maven.quiltmc.org/repository/snapshot"
+	}
+	// remove when ASM fix is released
+	maven {
+		url = "https://repository.ow2.org/nexus/content/repositories/snapshots/"
+	}
+	mavenLocal()
+}
+
+configurations {
+	proGuard
+
+}
+
+dependencies {
+	implementation(libs.commons.io)
+	implementation(libs.guava)
+	implementation(libs.jackson.xml)
+	implementation(libs.launchermeta.parser)
+
+	implementation(libs.bundles.enigma.full)
+	implementation(libs.tiny.remapper)
+	implementation(libs.stitch)
+	implementation(libs.bundles.unpick.full)
+	implementation(libs.mapping.io)
+	implementation(libs.javadoc.draftsman)
+
+	// Decompilers
+	implementation(libs.vineflower)
+
+	// Testing
+	testImplementation(libs.junit)
+	proGuard(libs.proguard)
+}
+
+javadoc {
+	failOnError = false
+}
+
+test {
+	useJUnitPlatform()
+	enableAssertions = false
+}
+
+gradlePlugin {
+	website = "https://github.com/BookkeepersMC/mappings-creator"
+	vcsUrl = "https://github.com/BookkeepersMC/mappings-creator"
+	plugins {
+		final pluginPackage = 'mappings.plugin.plugin.'
+		mappingsCreator {
+			displayName = "Mappings Creator"
+			description = "The main plugin for Mappings Creator. Includes all other plugins"
+			tags.set(['minecraft', 'mappings'])
+
+			id = 'com.bookkeepersmc.mappings-creator'
+			implementationClass = pluginPackage + 'MappingsPlugin'
+		}
+	}
+}

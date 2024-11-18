@@ -1,0 +1,31 @@
+.gradle/
+*-merged.jar
+*-mapped.jar
+*-intermediary.jar
+*.DS_Store
+out/
+mappings_official/
+namedSrc/
+namedTargetSrc/
+target.diff
+
+local.settings.gradle
+
+# idea
+.idea/
+*.iml
+*.iws
+*.ipr
+*.jar
+
+# eclipse
+.eclipse
+.classpath
+.project
+.settings/
+
+# vscode
+.vscode/
+bin/
+/buildSrc/build/
+/build/

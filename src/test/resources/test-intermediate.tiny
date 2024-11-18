@@ -1,0 +1,133 @@
+tiny	2	0	official	hashed
+c	a	com/example/u/C_001
+	f	I	a	f_001
+	f	F	b	f_002
+	f	Ljava/lang/String;	c	f_003
+	m	()V	a	m_001
+	m	()I	b	m_002
+	m	(I)V	a	m_003
+	m	(II)I	a	m_004
+c	b	com/example/u/C_002
+	f	Lb;	a	f_004
+	f	Lb;	b	f_005
+	f	Lb;	c	f_006
+	f	Lb;	d	f_007
+	f	[Lb;	e	f_008
+	m	()[Lb;	a	m_005
+	m	(Ljava/lang/String;)Lb;	a	m_006
+	m	()[Lb;	b	m_007
+c	c	com/example/u/C_003
+	f	Ljava/lang/String;	a	f_009
+	f	I	b	f_010
+c	c$a	com/example/u/C_003$C_004
+	f	Lc$a;	a	f_011
+	f	Lc$a;	b	f_012
+	f	Lc$a;	c	f_013
+	f	[Lc$a;	d	f_014
+	m	()[Lc$a;	a	m_008
+	m	(Ljava/lang/String;)Lc$a;	a	m_009
+	m	()[Lc$a;	b	m_010
+c	d	com/example/u/C_005
+	f	Ljava/lang/Object;	a	f_015
+	f	Ljava/lang/Object;	b	f_016
+	m	(Ljava/lang/Object;Ljava/lang/Object;)Ld;	a	m_011
+	m	(Ljava/lang/Object;)Z	equals	equals
+	m	()Ljava/lang/Object;	a	m_012
+	m	()Ljava/lang/Object;	b	m_013
+c	e	com/example/u/C_006
+	f	I	a	f_017
+	f	I	b	f_018
+	f	I	c	f_019
+	f	I	d	f_020
+	m	(I)V	a	m_014
+	m	()V	a	m_015
+	m	()V	b	m_016
+	m	()V	c	m_017
+c	f	com/example/u/C_007
+	f	Lf;	a	f_021
+	f	Lf;	b	f_022
+	f	Lf;	c	f_023
+	f	Lf;	d	f_024
+	f	I	e	f_025
+	f	I	f	f_026
+	f	I	g	f_027
+	f	[Lf;	h	f_028
+	m	()[Lf;	a	m_018
+	m	(Ljava/lang/String;)Lf;	a	m_019
+	m	()Z	b	m_020
+	m	()Z	c	m_021
+	m	()[Lf;	d	m_022
+c	g	com/example/u/C_008
+	f	I	a	f_028
+	f	I	b	f_029
+	f	I	c	f_030
+	f	I	d	f_031
+	m	(I)Ljava/lang/String;	a	m_023
+	m	(Ljava/lang/String;)I	a	m_024
+c	h	com/example/u/C_009
+c	i	com/example/u/C_010
+	m	()Ljava/lang/Object;	a	m_025
+	m	(Ljava/lang/Object;)V	a	m_026
+c	j	com/example/u/C_011
+	m	()Ljava/util/Collection;	b	m_027
+	m	(Ljava/util/Collection;)V	a	m_028
+c	k	com/example/u/C_012
+	f	Ljava/lang/String;	a	f_032
+	m	(Ljava/lang/String;)V	a	m_029
+	m	()I	a	m_030
+c	k$a	com/example/u/C_012$C_013
+	m	(Ljava/lang/String;)I	a	m_031
+c	k$a$a	com/example/u/C_012$C_013$C_014
+	f	Lk$a;	a	f_033
+	m	(Ljava/lang/String;)I	a	m_032
+c	mappings/internal/input/Keep	mappings/internal/input/Keep
+c	mappings/internal/input/Keep$1	mappings/internal/input/Keep$C_015
+	m	()Ljava/lang/String;	a	m_033
+c	mappings/internal/input/Keep$2	mappings/internal/input/Keep$C_016
+c	l	com/example/u/C_017
+	m	()V	a	m_034
+c	l$1	com/example/u/C_017$C_018
+	f	Ll;	a	f_034
+c	l$a	com/example/u/C_017$C_019
+	f	Ll;	a	f_035
+c	l$b	com/example/u/C_017$C_020
+	f	Ll;	a	f_036
+	m	()V	a	m_035
+c	m	com/example/u/C_021
+	m	()V	a	m_036
+	m	()V	b	m_037
+	m	(Ljava/lang/String;)V	a	m_038
+c	n	com/example/u/C_022
+	m	()V	b	m_037
+	m	(Z)I	a	m_039
+	m	()V	c	m_040
+c	o	com/example/u/C_023
+c	p	com/example/u/C_024
+c	p$a	com/example/u/C_024$C_025
+	m	()V	a	m_041
+c	p$b	com/example/u/C_024$C_026
+	f	Lp$b;	a	f_037
+	f	Lp$b;	b	f_038
+	f	Lp$b;	c	f_039
+	f	[Lp$b;	d	f_040
+	m	()[Lp$b;	a	m_042
+	m	(Ljava/lang/String;)Lp$b;	a	m_043
+	m	()[Lp$b;	b	m_044
+c	p$c	com/example/u/C_024$C_027
+	f	I	a	f_041
+	f	I	b	f_042
+	f	Lp$c$a;	c	f_043
+	m	(Ljava/lang/Object;)Z	equals	equals
+	m	()I	a	m_045
+	m	()I	b	m_046
+	m	()Lp$c$a;	c	m_047
+c	p$c$a	com/example/u/C_024$C_027$C_028
+	f	Lp$c$a;	a	f_044
+	f	Lp$c$a;	b	f_045
+	f	Lp$c$a;	c	f_046
+	f	[Lp$c$a;	c	f_047
+	m	()[Lp$c$a;	a	m_048
+	m	(Ljava/lang/String;)Lp$c$a;	a	m_049
+	m	()[Lp$c$a;	b	m_050
+c	p$c$b	com/example/u/C_024$C_027$C_029
+	m	()I	a	m_051
