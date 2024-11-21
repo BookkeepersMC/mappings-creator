@@ -87,7 +87,9 @@ public interface MappingsProjectPlugin extends Plugin<Project> {
     }
 
     default void provideDefaultError(Property<?> property, String errorMessage) {
-        property.convention(this.getProviders().provider(() -> { throw new GradleException(errorMessage); }));
+        property.convention(this.getProviders().provider(() -> {
+            throw new GradleException(errorMessage);
+        }));
     }
 
     /**

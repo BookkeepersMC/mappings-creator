@@ -15,7 +15,7 @@ import java.io.Reader;
 import java.nio.file.Files;
 
 public class MappingsJavadocProvider implements UniversalJavadocProvider {
-    private transient final MemoryMappingTree tree = new MemoryMappingTree();
+    private final transient MemoryMappingTree tree = new MemoryMappingTree();
     private final int namespaceId;
 
     public MappingsJavadocProvider(File mappingsFile, String namespace) throws IOException {

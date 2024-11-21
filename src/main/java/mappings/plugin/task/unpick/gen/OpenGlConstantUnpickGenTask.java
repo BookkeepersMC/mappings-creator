@@ -117,7 +117,6 @@ public abstract class OpenGlConstantUnpickGenTask extends DefaultTask implements
                     final ZipEntry e2 = zip.getEntry("org/lwjgl/opengl/GL" + version + "C.class");
                     final ClassReader reader2 = new ClassReader(zip.getInputStream(e2).readAllBytes());
 
-
                     reader.accept(
                         new ClassVisitor(Opcodes.ASM9) {
                             @Override

@@ -67,6 +67,7 @@ import static org.quiltmc.enigma_plugin.Arguments.SIMPLE_TYPE_FIELD_NAMES_PATH;
  *                  AbstractArchiveTask#getArchiveVersion() archiveVersion}:
  *                  {@link MappingsExtension}'s {@link MappingsExtension#getMappingsVersion() mappingsVersion}
  *         </ul>
+ * </ul>
  */
 public abstract class MappingsBasePlugin extends DefaultExtensionedMappingsProjectPlugin<MappingsExtension> {
     public static String projectName = "mappings-project";
